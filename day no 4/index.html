@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border: 2px solid black;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+      th {
+        border: 2px solid black;
+        width: 250px;
+        padding: 5px 0;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <input
+        id="input_value"
+        type="text"
+        placeholder="Enter the task"
+        required
+      />
+      <input
+        id="priority_level"
+        type="text"
+        placeholder="Enter the Priority"
+        required
+      />
+      <button id="Submit_task">Submit</button>
+      <button id="search">serch by Name</button>
+    </div>
+    <div class="div">
+      <table id="table_Add">
+        <tr>
+          <th>Check status</th>
+
+          <!-- <th><input onchange="check_Status()"  type="checkbox" /></th> -->
+          <th>Name</th>
+          <th>Status</th>
+          <th>Priority</th>
+        </tr>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
