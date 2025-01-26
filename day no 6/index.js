@@ -9,9 +9,7 @@ new Promise((resolve, reject) => {
     }
 }).catch((err) => {
     console.log("some Error occurred", err);
-}).finally((e) => {
-    console.log("Finished");
-})
+}).finally(() => console.log("Finished"))
 
 new Promise((resolve, reject) => {
     setTimeout(() => {
